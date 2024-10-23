@@ -6,6 +6,7 @@ limpiar(){
     sudo docker stop maquina03sqli > /dev/null 2>&1
     sudo docker rm maquina03sqli > /dev/null 2>&1
     sudo docker image rm maquina03:sqli > /dev/null 2>&1
+    sudo docker network rm DockerRed > /dev/null 2>&1
     echo "Listo, ya puedes cerrar la terminal ;)"
     exit 0
 }
